@@ -168,7 +168,7 @@ section.intro {
       li.language {
         text-align: center;
         vertical-align: middle;
-        width: 25%;
+        width: 20%;
         margin-bottom: 2em;
 
         @include media($small-screen-only) {
@@ -198,6 +198,12 @@ section.intro {
           letter-spacing: 2px;
           margin: 0;
           text-transform: uppercase;
+
+          .beta {
+            color: $purple;
+            display: block;
+            font-size: 0.5em;
+          }
         }
       }
     }
