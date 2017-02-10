@@ -54,9 +54,11 @@ RUN apk add --update --virtual build-deps \
       && npm install --production \
       && npm run build \
       && apk del build-deps \
-      && rm .env \
       && rm -rf /var/cache/apk/* \
-      && adduser -S -D -H hound
+      && rm .env \
+      && adduser -S -D -H hound \
+      && mkdir tmp \
+      && chown hound tmp
 
 WORKDIR /hound
 
