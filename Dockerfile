@@ -58,7 +58,7 @@ RUN apk add --update --virtual build-deps \
       && rm .env \
       && adduser -S -D -H hound \
       && mkdir tmp \
-      && chown hound tmp
+      && chown hound tmp db/schema.rb
 
 WORKDIR /hound
 
